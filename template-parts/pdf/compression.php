@@ -36,6 +36,7 @@
                                 <h2 class="center teal-text"><i class="material-icons">reorder</i></h2>
                                 <div class="row center">
                                     <?php echo $entry; ?> - 
+                                    <img id='loading' class="loading" src='resources/images/loading.gif' style='display: none;height: 60px;float: right;'>
                                     <?php echo number_format ( filesize ( "uploads/pdf/original/$entry" )/(1024*1024) , 2 )." MB";
                                     if(file_exists ( "uploads/pdf/compressed/$entry" )){ ?>
                                         <a href="uploads/pdf/compressed/<?php echo $entry; ?>" name="<?php echo $entry; ?>" >
@@ -45,7 +46,7 @@
                                             <button class="compress_pdf" name="<?php echo $entry ?>" >Compress</button>
                                     <?php } ?>
                                     <button class="delete_pdf" name="<?php echo $entry; ?>" >Delete</button>
-                                    <img id='loading' class="loading" src='resources/images/loading.gif' style='display: none;'>
+                                    
                                 </div>
                             </div>
                         </div>

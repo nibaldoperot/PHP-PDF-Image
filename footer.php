@@ -28,15 +28,15 @@
         var filename = $(this).attr('name')
         var path = filename
         console.log(filename)
-        $('#loading').show();
+        $('#loading').show()
         $.ajax({
           type: "POST",
           url: "template-parts/pdf/do_compress.php",
           data: "path="+path
         }).done(function( msg ) {
-          alert( "Compression Finished");
-          location.reload(); 
-        });
+          alert( "Compression Finished")
+          location.reload() 
+        })
       })
 
 
@@ -44,15 +44,15 @@
         var filename = $(this).attr('name')
         var path = filename
         console.log(filename)
-        $('#loading').show();
+        $('#loading').show()
         $.ajax({
           type: "POST",
           url: "template-parts/pdf/do_delete.php",
           data: "path="+path
         }).done(function( msg ) {
-          alert( "Deleted File");
-          location.reload(); 
-        });
+          alert( "Deleted File")
+          location.reload() 
+        })
       })
 
       $('.resize_img').click(function(){
@@ -61,17 +61,32 @@
         var width = $('.width').val()
         var height = $('.height').val()
         console.log(filename, width, height)
-        $('#loading').show();
+        $('#loading').show()
         $.ajax({
           type: "POST",
           url: "template-parts/img/do_resize.php",
           data: "path="+path+"&width="+width+"&height="+height
         }).done(function( msg ) {
-          alert( "Resized File");
-          location.reload(); 
-        });
+          alert( "Resized File")
+          location.reload() 
+        })
       })
-    });
+
+      $('.delete_img').click(function(){
+        var filename = $(this).attr('name')
+        var path = filename
+        console.log(filename)
+        $('#loading').show()
+        $.ajax({
+          type: "POST",
+          url: "template-parts/img/do_delete.php",
+          data: "path="+path
+        }).done(function( msg ) {
+          alert( "Deleted File")
+          location.reload() 
+        })
+      })
+    })
   </script>
   </body>
 </html>

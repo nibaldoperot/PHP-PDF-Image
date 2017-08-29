@@ -33,7 +33,7 @@
                     
                 </div>
                <div class="col s12 m2">
-                    <h2 class="center"><i class="material-icons">highlight_off</i></h2>
+                    <h2 class="center"><i class="material-icons">clear</i></h2>
                 </div>
                 <div class="col s12 m5">
                     <input placeholder="Heigth" class="height"/>
@@ -63,7 +63,7 @@
                                     <?php } ?>
                                     <button class="resize_img" name="<?php echo $entry ?>" >Resize</button>
                                     <button class="delete_img" name="<?php echo $entry; ?>" >Delete</button>
-                                    <img id='loading' class="loading" src='resources/images/loading.gif' style='display: none;'>
+                                    <img id='loading' class="loading" src='resources/images/loading.gif' style='display: none;height: 60px;'>
                                 </div>
                             </div>
                         </div>

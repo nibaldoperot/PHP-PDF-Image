@@ -1,5 +1,4 @@
 <?php 
-
     include 'header.php';
         if($_GET['type'] == 'pdf'){
             if($_GET['status']== 'uploaded'){
@@ -17,5 +16,4 @@
             }
         }
     include 'footer.php';
-
 ?>

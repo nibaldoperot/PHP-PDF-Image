@@ -1,5 +1,5 @@
 <?php  include 'header.php'; ?>
-
+  <title>Home</title>
 </head>
 <body>
   <nav class="white" role="navigation">
