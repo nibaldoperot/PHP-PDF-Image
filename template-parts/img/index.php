@@ -28,8 +28,16 @@
 
       <div class="row">
             <form action="" method="POST" enctype="multipart/form-data">
-                <input type="file" name="files[]" multiple/>
-                <input type="submit"/>
+                <p class="light">
+                  <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+                      <a class="btn-large waves-effect waves-light teal lighten-1">Browse</a>
+                      <input type="file" name="files[]" multiple/>
+                  </label><br /><br />
+                  <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+                      <a class="btn-large waves-effect waves-light teal lighten-1">Upload</a>
+                      <input type="submit"/>
+                  </label>
+                </p>
             </form>
         </div>
       </div>

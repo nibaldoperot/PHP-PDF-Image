@@ -29,8 +29,14 @@
       <div class="row">
           <form enctype="multipart/form-data" action="<?php print $_SERVER['PHP_SELF']?>?type=pdf" method="post">
                 <p class="light">
-                    <input type="file" name="pdfFile" /><br /><br />
-                    <input type="submit" value="Upload" />
+                    <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+                        <a class="btn-large waves-effect waves-light teal lighten-1">Browse</a>
+                        <input type="file" name="pdfFile"/><br /><br />
+                    </label>
+                    <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+                        <a class="btn-large waves-effect waves-light teal lighten-1">Upload</a>
+                        <input type="submit" value="Upload" />
+                    </label>
                 </p>
             </form>
         </div>

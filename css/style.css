@@ -19,6 +19,9 @@ p {
   color: #26a69a;
 }
 
+button, input{
+  display: none;
+}
 .parallax-container {
   min-height: 380px;
   line-height: 0;

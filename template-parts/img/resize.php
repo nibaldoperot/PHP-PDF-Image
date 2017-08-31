@@ -61,8 +61,16 @@
                                             </a>
                                             <br />
                                     <?php } ?>
-                                    <button class="resize_img" name="<?php echo $entry ?>" >Resize</button>
-                                    <button class="delete_img" name="<?php echo $entry; ?>" >Delete</button>
+                                    <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+                                        <a class="btn-large waves-effect waves-light teal lighten-1">Resize</a>
+                                        <button class="resize_img" name="<?php echo $entry ?>" >Resize</button>
+                                    </label></br></br>
+
+                                    <label class="mdl-button mdl-js-button mdl-button--icon mdl-button--file">
+                                        <a class="btn-large waves-effect waves-light teal lighten-1">Delete</a>
+                                        <button class="delete_img" name="<?php echo $entry; ?>" >Delete</button>
+                                    </label>
+                                    
                                     <img id='loading' class="loading" src='resources/images/loading.gif' style='display: none;height: 60px;'>
                                 </div>
                             </div>

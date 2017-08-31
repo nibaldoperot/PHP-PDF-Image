@@ -40,6 +40,21 @@
       })
 
 
+      $('.split_pdf').click(function(){
+        var filename = $(this).attr('name')
+        var path = filename
+        $('#loading').show()
+        $.ajax({
+          type: "POST",
+          url: "template-parts/pdf/do_split.php",
+          data: "path="+path
+        }).done(function( msg ) {
+          alert( "Deleted File")
+          location.reload() 
+        })
+      })
+
+
       $('.delete_pdf').click(function(){
         var filename = $(this).attr('name')
         var path = filename
